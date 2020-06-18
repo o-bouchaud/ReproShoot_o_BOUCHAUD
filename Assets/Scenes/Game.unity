@@ -312,6 +312,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8485363908127284481}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &832966233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4849498326393616438, guid: 58d55ee7625beb64a8700e4fa4d54d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 8485363908127284481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &832966234
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832966233}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &873340105
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +764,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinningScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 5035218244672160803, guid: f22b3b2b8aab1a74fb8a11c19cc1a58d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f22b3b2b8aab1a74fb8a11c19cc1a58d, type: 3}
 --- !u!1001 &4246359787030862207
@@ -855,6 +887,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LosingScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483598504123532875, guid: 12f1fd06800008840b8ae55d08cefb8d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f1fd06800008840b8ae55d08cefb8d, type: 3}
@@ -997,6 +1034,11 @@ PrefabInstance:
     - target: {fileID: 4849498326393616438, guid: 58d55ee7625beb64a8700e4fa4d54d90,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569933876419029427, guid: 58d55ee7625beb64a8700e4fa4d54d90,
+        type: 3}
+      propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
