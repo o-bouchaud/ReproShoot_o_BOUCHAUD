@@ -7,6 +7,7 @@ public class PlayerBehaviour : MonoBehaviour
 {
 
     [SerializeField] private float speed;
+    [SerializeField] private float maxSpeed;
 
     private Vector2 stickDirection;
     private Rigidbody2D myRB2D;
@@ -47,7 +48,11 @@ public class PlayerBehaviour : MonoBehaviour
     void FixedUpdate()
     {
         var direction = new Vector2{ x = stickDirection.x, y = stickDirection.y};
-        myRB2D.AddForce(direction * speed);
+        
+        if (myRB2D.velocity.sqrMagnitude < maxSpeed)
+        {
+            myRB2D.AddForce(direction * speed);
+        }
 
     }
 }
