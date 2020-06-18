@@ -27,6 +27,15 @@ public class EnemyBehaviour : MonoBehaviour
         Die();
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+ {
+     if (other.tag == "Bullet")
+     {
+         Destroy(gameObject);
+         SceneManager.LoadScene("Win");
+     }
+ }
+
     private void Die()
     {
         Destroy(gameObject);
