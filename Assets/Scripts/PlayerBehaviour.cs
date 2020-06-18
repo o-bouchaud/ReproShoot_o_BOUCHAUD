@@ -6,6 +6,16 @@ using UnityEngine.InputSystem;
 public class PlayerBehaviour : MonoBehaviour
 {
 
+    private void OnEnable()
+    {
+        var playerControls = new PlayerControls();
+        playerControls.Enable();
+        playerControls.Main.Move.performed += MoveOnperformed;
+        playerControls.Main.Move.canceled += MoveOncanceled;
+        playerControls.Main.Shoot.performed += ShootOnperformed;
+    }
+
+
     private void ShootOnperformed(InputAction.CallbackContext obj)
     {
 
