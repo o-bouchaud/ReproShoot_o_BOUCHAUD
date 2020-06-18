@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyBehaviour : MonoBehaviour
 {
@@ -17,7 +18,18 @@ public class EnemyBehaviour : MonoBehaviour
     void Update()
     {
 
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
        
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Die();
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene("Lose");
     }
 }
