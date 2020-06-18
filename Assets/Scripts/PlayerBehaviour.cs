@@ -12,6 +12,8 @@ public class PlayerBehaviour : MonoBehaviour
     private Vector2 stickDirection;
     private Rigidbody2D myRB2D;
 
+    [SerializeField] private GameObject bullet;
+
     private void OnEnable()
     {
         var playerControls = new PlayerControls();
@@ -24,7 +26,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void ShootOnperformed(InputAction.CallbackContext obj)
     {
-        //Instantiate a bullet
+        Instantiate(bullet, transform.position, Quaternion.identity);
     }
 
     private void MoveOnperformed(InputAction.CallbackContext obj)

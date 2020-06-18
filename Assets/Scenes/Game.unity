@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &419252893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1126195849605557715, guid: 848d3cb67eea99141b37d4c593492f62,
+    type: 3}
+  m_PrefabInstance: {fileID: 5979698828751464959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,7 +843,7 @@ PrefabInstance:
     - target: {fileID: 1126195849605557715, guid: 848d3cb67eea99141b37d4c593492f62,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5072060017039930155, guid: 848d3cb67eea99141b37d4c593492f62,
         type: 3}
@@ -978,5 +984,15 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6569933876419029427, guid: 58d55ee7625beb64a8700e4fa4d54d90,
+        type: 3}
+      propertyPath: startTimeBtwShots
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569933876419029427, guid: 58d55ee7625beb64a8700e4fa4d54d90,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 419252893}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58d55ee7625beb64a8700e4fa4d54d90, type: 3}
