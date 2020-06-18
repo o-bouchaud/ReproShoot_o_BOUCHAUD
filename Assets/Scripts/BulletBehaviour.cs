@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     [SerializeField] private float speed;
-    private Transform enemy;
+    [SerializeField] private Transform enemy;
     private Vector2 target;
 
 
@@ -26,7 +26,7 @@ public class BulletBehaviour : MonoBehaviour
             DestroyBullet();
         }
     }
-    void OnTriggerEnter(Collider other)
+    void OnColliderEnter2D(Collider2D other)
     {
         if(other.CompareTag("Enemy"))
         {
