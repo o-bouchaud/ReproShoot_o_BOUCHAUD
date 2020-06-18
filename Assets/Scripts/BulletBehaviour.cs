@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BulletBehaviour : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class BulletBehaviour : MonoBehaviour
 
         if(transform.position.x == target.x && transform.position.y == target.y)
         {
-            DestroyBullet();
+            Destroy(gameObject);
         }
     }
     void OnColliderEnter2D(Collider2D other)
@@ -31,11 +32,8 @@ public class BulletBehaviour : MonoBehaviour
         if(other.CompareTag("Enemy"))
         {
             Destroy(enemy.gameObject);
-            DestroyBullet();
+            SceneManager.LoadScene("Win");
+
         }
-    }
-    void DestroyBullet()
-    {
-        Destroy(gameObject);
     }
 }
