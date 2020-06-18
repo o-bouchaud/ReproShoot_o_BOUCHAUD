@@ -49,10 +49,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         var direction = new Vector2{ x = stickDirection.x, y = stickDirection.y};
         
-        if (myRB2D.velocity.sqrMagnitude < maxSpeed)
-        {
             myRB2D.AddForce(direction * speed);
-        }
+
 
     }
 }
