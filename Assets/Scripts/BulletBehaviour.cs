@@ -5,15 +5,15 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     [SerializeField] private float speed;
-    private Transform player;
+    private Transform enemy;
     private Vector2 target;
 
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
 
-        target = new Vector2 (player.position.x, player.position.y);
+        target = new Vector2 (enemy.position.x, enemy.position.y);
 
     }
 
@@ -28,7 +28,7 @@ public class BulletBehaviour : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Enemy"))
         {
             DestroyBullet();
         }
