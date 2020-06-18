@@ -25,20 +25,39 @@ public class EnemyBehaviour : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         Die();
+    /*if (gameObject.tag == "Bullet")
+    {
+        Win();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
- {
-     if (other.tag == "Bullet")
+    if (gameObject.tag == "Player")
      {
-         Destroy(gameObject);
-         SceneManager.LoadScene("Win");
+        Die();
+     }*/
+    }
+
+    /*void OnTriggerEnter2D(Collider2D other)
+ {
+    if (other.tag == "Bullet")
+    {
+        Destroy(other.gameObject);
+    }
+
+    if (other.tag == "Player")
+     {
+        Destroy(other.gameObject);
      }
- }
+ }*/
 
     private void Die()
     {
         Destroy(gameObject);
         SceneManager.LoadScene("Lose");
     }
+
+/*        private void Win()
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene("Win");
+    }*/
 }
