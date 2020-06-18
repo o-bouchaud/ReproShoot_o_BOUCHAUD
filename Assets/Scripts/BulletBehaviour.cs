@@ -30,7 +30,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         if(other.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
+            Destroy(enemy.gameObject);
             DestroyBullet();
         }
     }
