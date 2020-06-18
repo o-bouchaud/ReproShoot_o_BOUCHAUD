@@ -4,6 +4,23 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+
+    private void ShootOnperformed(InputAction.CallbackContext obj)
+    {
+
+    }
+
+    private void MoveOnperformed(InputAction.CallbackContext obj)
+    {
+
+    }
+
+    private void MoveOncanceled(InputAction.CallbackContext obj)
+    {
+
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,7 +28,7 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
     }
