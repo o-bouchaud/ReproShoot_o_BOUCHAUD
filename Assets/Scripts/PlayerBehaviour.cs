@@ -21,6 +21,7 @@ public class PlayerBehaviour : MonoBehaviour
         playerControls.Main.Move.performed += MoveOnperformed;
         playerControls.Main.Move.canceled += MoveOncanceled;
         playerControls.Main.Shoot.performed += ShootOnperformed;
+        playerControls.Main.Rotate.performed += RotateOnperformed;
     }
 
 
@@ -37,6 +38,11 @@ public class PlayerBehaviour : MonoBehaviour
     private void MoveOncanceled(InputAction.CallbackContext obj)
     {
         stickDirection = Vector2.zero;
+    }
+
+    private void RotateOnperformed(InputAction.CallbackContext obj)
+    {
+
     }
 
 
