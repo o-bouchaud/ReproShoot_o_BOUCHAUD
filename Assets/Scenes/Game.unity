@@ -306,7 +306,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832966233}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -766,6 +766,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5971116460967218769, guid: 58d55ee7625beb64a8700e4fa4d54d90,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6569933876419029427, guid: 58d55ee7625beb64a8700e4fa4d54d90,
         type: 3}
       propertyPath: speed
@@ -790,6 +795,11 @@ PrefabInstance:
     - target: {fileID: 8704949241526823829, guid: 58d55ee7625beb64a8700e4fa4d54d90,
         type: 3}
       propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736586250348746201, guid: 58d55ee7625beb64a8700e4fa4d54d90,
+        type: 3}
+      propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
