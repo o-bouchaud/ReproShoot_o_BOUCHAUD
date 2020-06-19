@@ -29,8 +29,9 @@ public class EnemyBehaviour : MonoBehaviour
             Win();
         }
     
-        if (other.gameObject.tag == "Player")
+        else if (other.gameObject.tag == "Player")
         {
+            Debug.Log("Touching Player");
             Die();
         }
     /*if (gameObject.tag == "Bullet")
@@ -60,11 +61,12 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void Die()
     {
+        Debug.Log("Die function");
         Destroy(gameObject);
         SceneManager.LoadScene("Lose");
     }
 
-        private void Win()
+    private void Win()
     {
         Destroy(gameObject);
         SceneManager.LoadScene("Win");
